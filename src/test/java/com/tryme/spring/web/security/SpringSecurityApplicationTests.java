@@ -1,10 +1,10 @@
-package com.tryme.spring.web.cookiecreator;
+package com.tryme.spring.web.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CookieCreatorApplicationTests {
+class SpringSecurityApplicationTests {
 
 	@Test
 	void contextLoads() {
