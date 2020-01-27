@@ -1,0 +1,26 @@
+name: Gradle Validation CI
+on: [push, pull_request]
+jobs:
+#  format:
+#    name: Google Java Format
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Code-format
+#        uses: axel-op/googlejavaformat-action@v2.0.0
+#        with:
+#          args: --replace
+#          files: "**/*.java"
+#          skipCommit: false
+  validation:
+    name: "Validation"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cache
+        uses: actions/cache@v1.1.0
+        with:
+          path: ~/dependencies/ 
+          key: cookie-creator-dependencies
+      - name: Build-validation
+        uses: gradle/wrapper-validation-action@v1
