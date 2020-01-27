@@ -21,6 +21,6 @@ jobs:
         uses: actions/cache@v1.1.0
         with:
           path: ~/dependencies/ 
-          key: cookie-creator-dependencies
+          key: spring-security-trial-dependencies
       - name: Build-validation
         uses: gradle/wrapper-validation-action@v1

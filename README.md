@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.tryme.spring.web.cookie-creator' is invalid and this project uses 'com.tryme.spring.web.cookiecreator' instead.
+* The original package name 'com.tryme.spring.web.security' is invalid and this project uses 'com.tryme.spring.web.security' instead.
 
 # Getting Started
 
